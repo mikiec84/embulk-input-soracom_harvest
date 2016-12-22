@@ -1,6 +1,6 @@
-# Soracom Harvest input plugin for Embulk
+# SORACOM Harvest input plugin for Embulk
 
-[Soracom Harvest](https://soracom.jp/services/harvest/) is the data store service to store the data collected from IoT devices.
+[SORACOM Harvest](https://soracom.jp/services/harvest/) is the data store service to store the data collected from IoT devices.
 This plugin allows you to load data from Soracom Harvest and load into other data store and RDBMS with other [Embulk plugins](http://www.embulk.org/plugins/).
 
 ## Overview

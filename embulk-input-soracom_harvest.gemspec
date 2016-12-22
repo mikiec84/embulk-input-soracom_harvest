@@ -3,8 +3,8 @@ Gem::Specification.new do |spec|
   spec.name          = "embulk-input-soracom_harvest"
   spec.version       = "0.1.0"
   spec.authors       = ["Satoshi Akama"]
-  spec.summary       = "Soracom Harvest input plugin for Embulk"
-  spec.description   = "Loads records from Soracom Harvest."
+  spec.summary       = "SORACOM Harvest input plugin for Embulk"
+  spec.description   = "Loads records from SORACOM Harvest."
   spec.email         = ["satoshiakama@gmail.com"]
   spec.licenses      = ["MIT"]
   spec.homepage      = "https://github.com/sakama/embulk-input-soracom_harvest"
