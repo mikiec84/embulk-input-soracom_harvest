@@ -12,11 +12,11 @@ This plugin allows you to load data from Soracom Harvest and load into other dat
 
 ## Configuration
 
-- **auth_key_id**: AUTH_KEY for SORACOM (string, required)
-- **auth_key**: AUTH_KEY_ID for SORACOM (string, required)
+- **auth_key_id**: AUTH_KEY that you can get at SORACOM user console (string, required)
+- **auth_key**: AUTH_KEY_ID that you can get at SORACOM user console (string, required)
 - **target**: 'harvest' or 'sims'(string, default: 'harvest')
 - **filter**: filter to when get SIMs(string, default: `null`)
-- **tag_value_match_mode**: Tag search mode exact` or `prefix` (string, optional, default: `exact`)
+- **tag_value_match_mode**: Tag search mode `exact` or `prefix` (string, optional, default: `exact`)
 - **start_datetime**: get data time is after this value (works only when target is 'harvest')
 - **end_datetime**: get data time is after this value (works only when target is 'harvest')
 - **retry_limit**: Try to retry this times (integer, default: 5)
@@ -40,8 +40,8 @@ in:
 
 1. Please configure minimum seed config.
 2. Run `embulk guess /path/to/seed.yml -o /path/to/config.yml`.
-    * If you have no registered SIMs, guess doesn't work.
-    * If you have no records at Harvest, guess doesn't work.
+    * If you don't have registered SIMs, guess doesn't work.
+    * If you don't have records at Harvest, guess doesn't work.
 3. Run `embulk preview /path/to/config.yml`
 4. Run `embulk run /path/to/config.yml`
 
@@ -49,7 +49,7 @@ in:
 
 You can filter SIMS when get data by filter option.
 
-This plugin doesn't support multiple filter condition.
+This plugin doesn't support multiple filter condition like 'AND' or 'OR'.
 
 #### imsi
 
