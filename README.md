@@ -1,7 +1,7 @@
 # SORACOM Harvest input plugin for Embulk
 
 [SORACOM Harvest](https://soracom.jp/services/harvest/) is the data store service to store the data collected from IoT devices.
-This plugin allows you to load data from Soracom Harvest and load into other data store and RDBMS with other [Embulk plugins](http://www.embulk.org/plugins/).
+This plugin allows you to load data from SORACOM Harvest and load into other data store and RDBMS with other [Embulk plugins](http://www.embulk.org/plugins/).
 
 ## Overview
 
@@ -47,23 +47,23 @@ in:
 
 ### filter
 
-You can filter SIMS when get data by filter option.
+You can filter SIMs when get data by filter option.
 
 This plugin doesn't support multiple filter condition like 'AND' or 'OR'.
 
-#### imsi
+#### IMSI
 
 ```yaml
 filter: imsi: 440123456789012
 ```
 
-#### msisdn
+#### MSISDN
 
 ```yaml
 filter: msisdn: 811234567890
 ```
 
-#### status
+#### Status
 
 ```yaml
 filter: status: active
@@ -77,7 +77,7 @@ status value can be taken (active, inactive, ready, instock, shipped, suspended,
 
 Also accepts multiple vaules separated with `|`
 
-#### speed_class
+#### Speed class
 
 ```yaml
 filter: speed_class: s1.minimum
@@ -87,7 +87,7 @@ filter: speed_class: s1.minimum
 filter: speed_class: s1.minimum|s1.slow
 ```
 
-#### tag
+#### Tag
 
 ```yaml
 filter: tag_name: tag_value
@@ -109,11 +109,11 @@ You can set `tag_value_match_mode`. This option can be taken (exact, prefix).
 
 * Q3. Want to drop column.
 
-  * A. Please use[embulk-filter-column](https://github.com/sonots/embulk-filter-column)
+  * A. Please use [embulk-filter-column](https://github.com/sonots/embulk-filter-column)
 
 * Q4. Want to add time column like current time.
 
-  * A. Use [embulk-filter-add_time](https://github.com/treasure-data/embulk-filter-add_time)
+  * A. Please use [embulk-filter-add_time](https://github.com/treasure-data/embulk-filter-add_time)
 
 
 ## Build
