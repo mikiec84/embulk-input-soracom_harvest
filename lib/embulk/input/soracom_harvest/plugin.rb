@@ -89,7 +89,7 @@ module Embulk
             columns = self.get_sim_schema(sims.first)
           else
             records = client.list_subscribers_imsi_data(imsi: sims.first['imsi'], from: @start_datetime, to: @end_datetime, limit: 1)
-            raise ConfigError.new "Failed to guess. No records found at Soracom Harvest" if records.size == 0
+            raise ConfigError.new "Failed to guess. No records found at SORACOM Harvest" if records.size == 0
             columns = self.get_harvest_schema(records.first)
           end
 

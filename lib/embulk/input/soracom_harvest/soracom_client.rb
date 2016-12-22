@@ -83,7 +83,7 @@ module Embulk
           query['to'] = to unless to.nil?
           query['last_evaluated_key'] = last_record unless last_record.nil?
           response = get(path: path, query: query)
-          Embulk.logger.info "#{response.size} records found at Soracom Harvest for SIM: #{imsi}"
+          Embulk.logger.info "#{response.size} records found at SORACOM Harvest for SIM: #{imsi}"
 
           response
         end
