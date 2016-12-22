@@ -17,7 +17,6 @@ This plugin allows you to load data from Soracom Harvest and load into other dat
 - **target**: 'harvest' or 'sims'(string, default: 'harvest')
 - **filter**: filter to when get SIMs(string, default: `null`)
 - **tag_value_match_mode**: Tag search mode exact` or `prefix` (string, optional, default: `exact`)
-<!-- - **incremental**: enables incremental loading(boolean, default: true). If incremental loading is enabled, config diff for the next execution will include `last_path` parameter so that next execution skips files before the path. Otherwise, `last_path` will not be included.-->
 - **start_datetime**: get data time is after this value (works only when target is 'harvest')
 - **end_datetime**: get data time is after this value (works only when target is 'harvest')
 - **retry_limit**: Try to retry this times (integer, default: 5)
